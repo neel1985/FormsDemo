@@ -1,1 +1,17 @@
-<p>template-driven-form works!</p>
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
+
+    <p>
+        <label for="email">Email </label>
+        <input type="text" id="email" name="email" [(ngModel)]="user.email" required>
+    </p>
+    <p>
+        <label for="gender">Gender</label>
+        <input type="radio" value="male" name="gender" [(ngModel)]="user.gender" required> Male
+        <input type="radio" value="female" name="gender" [(ngModel)]="user.gender" required> Female
+    </p>
+
+    <p>
+        <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+    </p>
+
+</form>

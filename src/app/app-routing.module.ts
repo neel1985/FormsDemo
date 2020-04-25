@@ -12,6 +12,8 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  declarations: [TemplateDrivenFormComponent, ReactiveFormComponent]
+//  declarations: [TemplateDrivenFormComponent, ReactiveFormComponent]
 })
 export class AppRoutingModule { }
+
+export const componentsArr = [TemplateDrivenFormComponent, ReactiveFormComponent];
