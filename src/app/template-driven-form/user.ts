@@ -1,4 +1,4 @@
 export class User {
-    email:string = "abc@def.gh";
-    gender:string = "Male";
+    email:string;
+    gender:string;
 } 

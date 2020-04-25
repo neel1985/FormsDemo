@@ -1,1 +1,16 @@
-<p>reactive-form works!</p>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <p>
+        <label for="email">Email </label>
+        <input type="text" id="email" name="email" formControlName="email" required>
+    </p>
+    <p>
+        <label for="gender">Gender</label>
+        <input type="radio" value="male" name="gender" formControlName="gender"> Male
+        <input type="radio" value="female" name="gender" formControlName="gender"> Female
+    </p>
+
+    <p>
+        <button type="submit" [disabled]="!userForm.valid">Submit</button>
+    </p>
+    
+</form>

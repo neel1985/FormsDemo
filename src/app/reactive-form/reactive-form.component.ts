@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReactiveFormComponent implements OnInit {
 
+  userForm: FormGroup;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.userForm = new FormGroup({
+      email: new FormControl(''),
+      gender: new FormControl('', [Validators.required]),
+    });
+  }
+
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.log(this.userForm.value);
   }
 
 }
