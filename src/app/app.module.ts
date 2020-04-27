@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';        //imported FormsModule
 import { AppRoutingModule, componentsArr } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MdlMouseBtnClickDirective } from './mdl-mouse-btn-click.directive';
+import { MdlMouseBtnClickDirective } from './directives/mdl-mouse-btn-click.directive';
+import { TooltipDirective } from './directives/tooltip.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     componentsArr,
-    MdlMouseBtnClickDirective
+    MdlMouseBtnClickDirective,
+    TooltipDirective
   ],
   imports: [
     BrowserModule,

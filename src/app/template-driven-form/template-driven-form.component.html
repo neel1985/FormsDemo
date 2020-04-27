@@ -2,7 +2,12 @@
 
     <p>
         <label for="email">Email </label>
-        <input type="text" id="email" name="email" [(ngModel)]="user.email" required>
+        <input type="text" id="email" name="email" [(ngModel)]="user.email" *appTooltip="tooltipPresent" required>
+        <ng-template #tooltipTemplate>      
+            <div>   
+                This is my tooltip!
+            </div>      
+        </ng-template>
     </p>
     <p>
         <label for="gender">Gender</label>
