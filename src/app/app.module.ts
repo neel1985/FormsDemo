@@ -5,13 +5,15 @@ import { AppRoutingModule, componentsArr } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MdlMouseBtnClickDirective } from './directives/mdl-mouse-btn-click.directive';
 import { TooltipDirective } from './directives/tooltip.directive';
+import { ReplacePipe } from './pipes/replace.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     componentsArr,
     MdlMouseBtnClickDirective,
-    TooltipDirective
+    TooltipDirective,
+    ReplacePipe
   ],
   imports: [
     BrowserModule,

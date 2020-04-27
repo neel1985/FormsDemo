@@ -10,6 +10,9 @@
         </ng-template>
     </p>
     <p>
+        {{ user.phone | replace }}
+    </p>
+    <p>
         <label for="gender">Gender</label>
         <input type="radio" value="male" name="gender" [(ngModel)]="user.gender" required> Male
         <input type="radio" value="female" name="gender" [(ngModel)]="user.gender" required> Female
