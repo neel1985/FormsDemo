@@ -14,7 +14,10 @@ export class TemplateDrivenFormComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
 
+  doSomething(){
+    alert('Clicked');
   }
 
   onSubmit(contactForm) {

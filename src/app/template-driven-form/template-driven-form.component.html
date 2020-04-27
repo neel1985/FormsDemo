@@ -11,7 +11,7 @@
     </p>
 
     <p>
-        <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+        <button type="submit" (appMdlMouseBtnClick)="doSomething()" [disabled]="!contactForm.valid">Submit</button>
     </p>
 
 </form>

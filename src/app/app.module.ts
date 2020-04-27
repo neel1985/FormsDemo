@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';        //imported FormsModule
 import { AppRoutingModule, componentsArr } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MdlMouseBtnClickDirective } from './mdl-mouse-btn-click.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    componentsArr
+    componentsArr,
+    MdlMouseBtnClickDirective
   ],
   imports: [
     BrowserModule,
